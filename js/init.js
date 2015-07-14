@@ -4,15 +4,15 @@ var backgroundLocator = "#bg-container";
 function changeImage(secondsDelay) {
     // change the image
     if (!imageID) {
-		changeBg("url(\"res/ape.jpg\")");
+		changeBg("url(\"res/elephant.jpg\")");
         imageID++;
     } else {
 		if (imageID == 1) {
-			changeBg("url(\"res/wolf.jpg\")");
+			changeBg("url(\"res/tiger.jpg\")");
 			imageID++;
 		} else {
 			if (imageID == 2) {
-				changeBg("url(\"res/fox.jpg\")");
+				changeBg("url(\"res/tiger.jpg\")");
 				imageID = 0;
 			}
 		}
