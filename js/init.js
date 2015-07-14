@@ -12,7 +12,7 @@ function changeImage(secondsDelay) {
 			imageID++;
 		} else {
 			if (imageID == 2) {
-				changeBg("url(\"res/tiger.jpg\")");
+				changeBg("url(\"res/bear.jpg\")");
 				imageID = 0;
 			}
 		}
