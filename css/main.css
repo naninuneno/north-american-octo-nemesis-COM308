@@ -70,12 +70,23 @@ div#footer {
 
 /* /// Header \\\ */
 
+#topbar-logo {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	border: 2px solid #DCDDCD;
+}
+
+#topbar-logo img {
+	height: 45px;
+}
+
 .topbar.active {
 	border-bottom: 5px solid #F15D58;
 }
 
 div.topbar {
-	width: 33%;
+	width: 32%;
 	height: 100%;
 	display: table-cell;
 	vertical-align: middle;
