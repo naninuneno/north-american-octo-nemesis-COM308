@@ -1,0 +1,142 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+header {
+	height: 10%;
+}
+
+#main {
+	height: 90%;
+}
+
+html {
+	font-family: "Lato", "Arial";
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#main {
+	position: relative;
+	width: 100%;
+}
+
+.float-left, .float-right {
+	background-color: rgba(131, 191, 23, 0.5);
+}
+
+#bg-container {
+	z-index: -1;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: url("../res/ape.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+header {
+	width: 100%; 
+	background-color: #363635;
+	display: table;
+}
+
+.topbar.active {
+	border-bottom: 5px solid #F15D58;
+}
+
+div.topbar {
+	width: 33%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+div.topbar-mid {
+	border-left: solid #DCDDCD;
+	border-right: solid #DCDDCD;
+}
+
+div.inner-topbar {
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+	font-size: 22px;
+	color: #DCDDCD;
+	height: 100%;
+	text-decoration: none;
+	text-align: center;
+}
+
+p::first-letter {
+	font-size: 1.2em;
+}
+
+.float-left, .float-right {
+	width: 15%;
+	height: 100%;
+}
+
+.float-left {
+	float: left;
+	left:0px;
+}
+
+#main .float-right {
+	float: right;
+	right:0px;
+}
+
+.float-fill {
+	height: 100%;
+	background-color: rgba(166, 143, 88, 0.8);
+	padding: 0px 20px;
+	overflow: auto; 
+	border-left: solid #363635;
+	border-right: solid #363635;
+}
+
+.float-fill h1 {
+	text-align: center;
+}
+
+.article-title {
+	color: #0B2260;
+	font-size: 20px;
+}
+
+.article-img {
+	border: solid #363635;
+	border-width: 2px;
+	max-width: 150px;
+	height: 90px;
+}
+
+.preview {
+	text-align: justify;
+}
+
+.segment {
+	position: relative;
+}
+
+.segment .segment-left {
+	text-align: center;
+	float: left;
+	display: inline-block;
+	width: 155px;
+	height: 100px;
+	margin-right: 10px;
+}
+
+.sub-title, div.opentimes {
+	text-align: center;
+}
+
