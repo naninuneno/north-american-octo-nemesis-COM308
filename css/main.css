@@ -16,14 +16,21 @@ body {
 	margin: 0;
 }
 
-header, #footer {
+#header {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	height: 50px;
+	width: 70%;
+	display: table;
+	background-color: #363635;
+	border-bottom: 1px solid #363635;
+}
+
+#footer {
 	width: 100%; 
 	background-color: #363635;
 	display: table;
-}
-
-header {
-	height: 50px;
+	margin-top: 25px;
 }
 
 #main {
@@ -70,34 +77,56 @@ div#footer {
 
 /* /// Header \\\ */
 
+/* / Top Section \ */
+#top-topbar {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+
+
 #topbar-logo {
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
-	border-right: solid #DCDDCD;
+	position: absolute;
 }
 
 #topbar-logo img {
-	height: 45px;
+	height: 50px;
+	width: 100px;
+}
+
+.topbar-title {
+	margin: 0;
+	display: inline-block;
+	padding-top: 5px;
+	font-size: 26px;
+	color: #DCDDCD;
+}
+
+/* / Bottom Section \ */
+#btm-topbar {
+	width: 100%;
+	display: table;
 }
 
 .topbar.active {
 	border-bottom: 5px solid #F15D58;
 }
 
-div.topbar {
-	width: 32%;
+.topbar {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 20%;
 	height: 100%;
 	display: table-cell;
+	background-color: #5C5C5B;
+	border-left: solid #DCDDCD;
 	vertical-align: middle;
 }
 
-div.topbar-mid {
-	border-left: solid #DCDDCD;
-	border-right: solid #DCDDCD;
-}
-
-div.inner-topbar {
+.inner-topbar {
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
@@ -109,9 +138,10 @@ div.inner-topbar {
 	padding-top: 10px;
 }
 
-topbar a {
+/* Un-centres text vertically because fuck css
+/*.topbar a {
 	height: 100%;
-}
+}*/
 
 /* /// Header END \\\ */
 
@@ -140,6 +170,8 @@ topbar a {
 	border-left: solid #363635;
 	border-right: solid #363635;
 	border-bottom: solid #363635;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
 
 .float-fill h1 {
