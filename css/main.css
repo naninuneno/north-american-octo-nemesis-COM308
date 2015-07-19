@@ -29,9 +29,16 @@ body {
 #footer {
 	width: 100%; 
 	background-color: #363635;
-	display: table;
 	margin-top: 25px;
+	/* hidden to expand if zoomed in and overflow occurs
+		(not height: auto because floated elements apparently 
+		have 0 height and won't be considered) */
+	overflow: hidden;
+	/* padding to fill out footer since above fits to text size*/
+	padding-top: 3px;
+	padding-bottom: 5px;
 }
+
 
 #main {
 	position: relative;
@@ -41,10 +48,6 @@ body {
 .float-left, .float-right {
 	width: 15%;
 	height: 100%;
-}
-
-div#footer {
-	height: 25px;
 }
 
 /* /// Page Structure END \\\ */
@@ -80,16 +83,23 @@ div#footer {
 /* / Top Section \ */
 #top-topbar {
 	width: 100%;
-	height: 50px;
+	height: auto;
 	text-align: center;
 }
 
 
 #topbar-logo {
-	text-align: center;
-	display: table-cell;
+	float: left;
+	display: inline-block;
 	vertical-align: middle;
-	position: absolute;
+}
+
+#topbar-right-balance {
+	float: right;
+	display: inline-block;
+	vertical-align: middle;
+	height: 50px;
+	width: 100px;
 }
 
 #topbar-logo img {
@@ -101,8 +111,11 @@ div#footer {
 	margin: 0;
 	display: inline-block;
 	padding-top: 5px;
-	font-size: 26px;
+	padding-bottom: 5px;
+	font-size: 32px;
 	color: #DCDDCD;
+	position: relative;
+	text-align: center;
 }
 
 /* / Bottom Section \ */
@@ -131,17 +144,18 @@ div#footer {
 	height: 100%;
 	margin: 0 auto;
 	display: inline-block;
-	font-size: 22px;
+	font-size: 19px;
 	color: #DCDDCD;
 	text-decoration: none;
 	text-align: center; 
 	padding-top: 10px;
 }
 
-/* Un-centres text vertically because fuck css
-/*.topbar a {
+/* sometimes fucks up vertical alignment, sometimes
+	fixes it - CSS */
+.topbar a {
 	height: 100%;
-}*/
+}
 
 /* /// Header END \\\ */
 
@@ -231,15 +245,22 @@ div#footer {
 
 /* /// Footer \\\ */
 
-.footer-content {
-	height: 100%;
-	float: right;
+.footer-content, .footer-content-first {
+	height: 20px;
+	float: left;
 	text-decoration: none;
 	color: #DCDDCD;
-	padding-right: 5px;
 	display: table-cell;
 	vertical-align: middle;
-	font-size: 20px;
+	font-size: 18px;
+}
+
+.footer-content-first {
+	padding-left: 15px;
+}
+
+.footer-content {
+	padding-left: 35px;
 }
 
 /* /// Footer END \\\ */
