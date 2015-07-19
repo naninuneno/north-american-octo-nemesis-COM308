@@ -266,6 +266,21 @@ body {
 /* /// Footer END \\\ */
 
 
+/* /// About Page \\\ */
+
+img#zoo-main {
+	width: 350px;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+
+#zoo-about {
+	text-align: justify;
+	margin: 0px 15px;
+}
+
 /* /// Uncategorised \\\ */
 
 .sub-title, div.opentimes {
