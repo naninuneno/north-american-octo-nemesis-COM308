@@ -329,4 +329,13 @@ body {
 
 /* /// Large image article pages END \\\ */
 
+/* /// Other \\\ */
 
+#credits-link {
+	z-index: 1;
+	background-color: gray;
+	color: red;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
