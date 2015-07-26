@@ -93,6 +93,8 @@ body {
 	vertical-align: middle;
 }
 
+/* serves to balance the logo on the opposite side so the title stays centred
+	(because floated logo ruins centring of title), even on zoom */
 #topbar-right-balance {
 	float: right;
 	display: inline-block;
@@ -124,7 +126,8 @@ body {
 }
 
 .topbar.active {
-	border-bottom: 5px solid #F15D58;
+	border-bottom: 4px solid #FFA909;
+	border-left: solid #FFA909 !important;
 }
 
 .topbar {
@@ -150,8 +153,6 @@ body {
 	padding-top: 10px;
 }
 
-/* sometimes fucks up vertical alignment, sometimes
-	fixes it - CSS */
 .topbar a {
 	height: 100%;
 }
@@ -177,7 +178,7 @@ body {
 /* /// Mid-section \\\ */
 
 .float-fill {
-	background-color: rgba(166, 143, 88, 0.85);
+	background-color: rgba(175, 157, 113, 0.85);
 	padding: 0;
 	overflow: auto; 
 	border-left: solid #363635;
@@ -213,7 +214,21 @@ body {
 	font-size: 20px;
 }
 
-.article-img, .article-img-large, #zoo-main {
+.sub-title, .opentimes {
+	border-top: 1px solid #363635;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.sub-title {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.article-img, .article-img-large, #article-title-img {
 	border: solid #363635;
 	border-width: 2px;
 }
@@ -241,7 +256,7 @@ body {
 }
 
 .segment-odd {
-	background-color: rgba(121, 104, 64, 0.5);
+	background-color: rgba(145, 127, 73, 0.5);
 }
 
 .segment .segment-left, .segment-left-large {
@@ -258,7 +273,16 @@ body {
 	height: 125px;
 }
 
-.preview::first-letter {
+.return {
+	display: inline-block;
+	margin-left: 15px;
+	color: #0B2260;
+	font-size: 18px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.article::first-letter, .preview::first-letter, #article-about::first-letter {
 	font-size: 1.2em;
 }
 
@@ -288,9 +312,9 @@ body {
 /* /// Footer END \\\ */
 
 
-/* /// About Page \\\ */
+/* /// Large image article pages \\\ */
 
-img#zoo-main {
+#article-title-img {
 	width: 350px;
 	float: left;
 	margin-left: 15px;
@@ -298,29 +322,11 @@ img#zoo-main {
 	margin-bottom: 10px;
 }
 
-#zoo-about {
+#article-about {
 	text-align: justify;
 	margin: 0px 15px;
 }
 
-/* /// About Page END \\\ */
+/* /// Large image article pages END \\\ */
 
-
-/* /// Uncategorised \\\ */
-
-.sub-title, div.opentimes {
-	border-top: 1px solid #363635;
-	text-align: center;
-	padding-top: 2px;
-	padding-bottom: 2px;
-}
-
-.sub-title {
-	padding-top: 5px;
-	padding-bottom: 10px;
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-/* /// Uncategorised END \\\ */
 
