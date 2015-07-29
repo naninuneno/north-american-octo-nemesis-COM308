@@ -148,7 +148,7 @@ a:hover {
 	background-color: #5C5C5B;
 	border-left: solid #DCDDCD;
 	vertical-align: middle;
-	/* border-box means borders don't increase size of element */
+	/* border-box means borders don't increase size of element */ 
 	box-sizing: border-box; 
 }
 
