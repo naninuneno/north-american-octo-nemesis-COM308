@@ -19,7 +19,7 @@ function changeImage(secondsDelay) {
 	}
 	
     //call same function again for x of seconds
-    setTimeout("changeImage("+secondsDelay+")",((secondsDelay)*1000));
+    setTimeout(function() { changeImage(secondsDelay); }, ((secondsDelay)*1000));
 }
 
 function changeBg(bgSource) {

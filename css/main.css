@@ -133,23 +133,31 @@ a:hover {
 }
 
 .topbar.active {
-	border-bottom: 4px solid #FFA909;
+	background-color: #707070;
 	border-left: solid #FFA909 !important;
 }
 
 .topbar {
+	float: left;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	width: 20%;
+	/* min-width so topbar tabs move to next line on browser resize */
+	min-width: 20%;
 	height: 100%;
 	display: table-cell;
 	background-color: #5C5C5B;
 	border-left: solid #DCDDCD;
 	vertical-align: middle;
+	/* border-box means borders don't increase size of element */
+	box-sizing: border-box; 
 }
 
 .topbar:hover {
 	background-color: #707070;
+}
+
+.topbar.active:hover {
+	background-color: #7E7E7E;
 }
 
 .inner-topbar {
