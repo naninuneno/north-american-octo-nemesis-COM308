@@ -27,10 +27,23 @@ function truncateText(element, maxLength) {
 	return truncated;
 }
 
+function addPaginationButtons() {
+	var MAX_SEGMENTS = 3;
+	var NO_OF_SEGMENTS = $('.segment').length;
+	if (NO_OF_SEGMENTS > MAX_SEGMENTS) {
+		$( "<div id='pg-btns'></div>").appendTo($('.float-fill'));
+	}
+	for (var i = 1; i <= NO_OF_SEGMENTS; i++) {
+		$( "<div class='pg-btn'>" + i + "</div>" ).appendTo($('#pg-btns'));
+	}
+}
+
 	// truncate any preview text
 var previewElements = $('.preview');
 for (index = 0; index < previewElements.length; ++index) {
 	var currentElement = previewElements[index];
 	$(currentElement).text(truncateText(currentElement, 250));
 }
+
+addPaginationButtons();
 
