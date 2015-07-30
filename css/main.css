@@ -133,7 +133,7 @@ a:hover {
 }
 
 .topbar.active {
-	background-color: #707070;
+	background-color: #7B7B7B;
 	border-left: solid #FFA909 !important;
 }
 
@@ -157,7 +157,7 @@ a:hover {
 }
 
 .topbar.active:hover {
-	background-color: #7E7E7E;
+	background-color: #7F7F7F;
 }
 
 .inner-topbar {
@@ -315,6 +315,10 @@ a:hover {
 	display: table-cell;
 	vertical-align: middle;
 	font-size: 18px;
+}
+
+.footer-content:hover, .footer-content-first:hover {
+	color: #858FAF;
 }
 
 .footer-content-first {
