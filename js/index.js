@@ -27,36 +27,9 @@ function truncateText(element, maxLength) {
 	return truncated;
 }
 
-var MAX_SEGMENTS = 3;
-var NO_OF_SEGMENTS = $('.segment').length;
-
-function addPaginationButtons() {
-	if (NO_OF_SEGMENTS > MAX_SEGMENTS) {
-		$( "<div id='pg-btns'></div>").appendTo($('.float-fill'));
-	}
-	for (var i = 1; i <= (Math.ceil(NO_OF_SEGMENTS/MAX_SEGMENTS)); i++) {
-		$( "<div class='pg-btn'>" + i + "</div>" ).appendTo($('#pg-btns'));
-	}
-}
-
 	// truncate any preview text
 var previewElements = $('.preview');
 for (index = 0; index < previewElements.length; ++index) {
 	var currentElement = previewElements[index];
 	$(currentElement).text(truncateText(currentElement, 250));
 }
-
-addPaginationButtons();
-
-
-$('.pg-btn').click(function() { 
-
-	//hide all segments
-	$('.segment').hide();
- 
-	//take a slice of segments in the specified range using the text of the buttons 
-		// and show them
-	$('.segment').slice(MAX_SEGMENTS*($(this).text() - 1), MAX_SEGMENTS*($(this).text())).show();
- }
-); 
-
