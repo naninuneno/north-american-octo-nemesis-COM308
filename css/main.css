@@ -353,3 +353,9 @@ a:hover {
 	top: 0;
 	right: 0;
 }
+
+#aboutVid {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
