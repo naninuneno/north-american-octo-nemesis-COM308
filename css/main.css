@@ -268,12 +268,12 @@ a:hover {
 	padding-bottom: 15px;
 	border-top: 1px solid #363635;
 	position: relative;
+	/* overflow auto so style carries on if large image / video breaks boundaries */
+	overflow: auto;
 }
 
 .segment-odd {
 	background-color: rgba(145, 127, 73, 0.5);
-	/* overflow auto so style carries on if large image / video breaks boundaries */
-	overflow: auto;
 }
 
 .segment .segment-left, .segment-left-large {
