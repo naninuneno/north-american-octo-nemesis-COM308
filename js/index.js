@@ -33,4 +33,3 @@ for (index = 0; index < previewElements.length; ++index) {
 	var currentElement = previewElements[index];
 	$(currentElement).text(truncateText(currentElement, 250));
 }
-
